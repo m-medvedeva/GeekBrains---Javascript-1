@@ -61,9 +61,13 @@
         let arg1 = parseInt(prompt('Введите, пожалуйста, первое число:'));
         let arg2 = parseInt(prompt('Введите, пожалуйста, второе число:'));
 
-        let operation = prompt('Введите, пожалуйста, математическую операцию (+,  -,  / или  *)');
-        let result = mathOperation(arg1, arg2, operation);
-        alert(result);
+        if (isNaN(arg1) && isNaN(arg2)) {
+            alert('Вы ввели не число!');
+        } else {
+            let operation = prompt('Введите, пожалуйста, математическую операцию (+,  -,  / или  *)');
+            let result = mathOperation(arg1, arg2, operation);
+            alert(result);
+        }
     </script>
 </body>
 
