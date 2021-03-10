@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кто хочет стать миллионером</title>
+</head>
+
+<body>
+    <script>
+        let questions = [
+            {
+                question: 'Какое растение существует на самом деле?',
+                answer1: '1 - Лох чилийский',
+                answer2: '2 -Лох индийский',
+                answer3: '3 - Лох греческий',
+                answer4: '4 - Лох русский',
+                correct: 2,
+            },
+
+            {
+                question: 'Какой город объявлен официальной родиной русского Деда Мороза?',
+                answer1: '1 - Малая Вишера',
+                answer2: '2 - Великий Устюг',
+                answer3: '3 - Вышний Волочек',
+                answer4: '4 - Нижний Новгород',
+                correct: 2,
+            },
+
+            {
+                question: 'Что проводит боксер, наносящий удар противнику снизу?',
+                answer1: '1 - Свинг',
+                answer2: '2 - Хук',
+                answer3: '3 - Апперкот',
+                answer4: '4 - Джэб',
+                correct: 3,
+            },
+
+            {
+                question: 'Кого нет среди смешариков?',
+                answer1: '1 - Барана',
+                answer2: '2 - Свиньи',
+                answer3: '3 - Коня',
+                answer4: '4 - Лося',
+                correct: 3,
+            },
+
+            {
+                question: 'Как называется ближайшая к Земле звезда?',
+                answer1: '1 - Солнце',
+                answer2: '2 - Проксиома Центавра',
+                answer3: '3 - Полярная',
+                answer4: '4 - Сириус',
+                correct: 1,
+            },
+        ]
+
+        let amount = 0;
+        let score = 0;
+
+        alert('Сыграем в "Кто хочет стать миллионером"? На кону большая сумма!');
+
+        for (let i = 0; i < questions.length; i++) {
+            let event = +prompt('Ответь, пожалуйста, на вопрос. ' + questions[i].question + ' ' + questions[i].answer1 + ' ' + questions[i].answer2 + ' ' + questions[i].answer3 + ' ' + questions[i].answer4 + ' За правильный ответ тебе начислят 1000 рублей. -1 - Выход из игры');
+            if (event == -1) {
+                break;
+            } else if (event == questions[i].correct) {
+                alert('Это верный ответ! К вашему выигрышу прибавляется 1000 рублей!');
+                amount += 1000;
+                score++;
+            } else {
+                alert('Увы, вы дали неверный ответ. Верный ответ - ' + questions[i].correct);
+            };
+        };
+
+        alert('Спасибо за игру! Вы дали: ' + score + ' верных ответов и заработали ' + amount + ' рублей');
+
+
+    </script>
+</body>
+
+</html>
