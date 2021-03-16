@@ -1,0 +1,54 @@
+.arrow {
+    height: 50px;
+    position: relative;
+    width: 10px;
+    background: black;
+    margin: 100px;
+    display: inline-block;
+  }
+
+  .arrow:hover {
+    background: red;
+  }
+  
+  .arrow:before {
+    content: " ";
+    width: 10px;
+    background: black;
+    height: 35px;
+    position: absolute;
+    top: -10px;
+    transform: rotate(50deg);
+    left: -10px;
+  }
+
+  .arrow:before:hover {
+    background: red;
+  }
+
+  .arrow:hover:before {
+    background: red;
+  }
+
+  .arrow:after {
+    content: " ";
+    width: 10px;
+    background: black;
+    height: 35px;
+    position: absolute;
+    top: -10px;
+    transform: rotate(-50deg);
+    right: -10px;
+  }
+
+  .arrow:hover:after {
+    background: red;
+  }
+  
+  .left {
+    transform: rotate(-90deg);
+  }
+  
+  .right {
+    transform: rotate(90deg);
+  }
