@@ -9,7 +9,7 @@ let pictures = ['cat1', 'cat2', 'cat3'];
 let i = 1;
 
 right.onclick = function () {
-    if (i >= 3 || i < 0) {
+    if (i >= pictures.length || i < 0) {
         i = 0;
     }
     picture.src = 'img/' + pictures[i] + '.jpg';
@@ -18,7 +18,7 @@ right.onclick = function () {
 };
 
 left.onclick = function () {
-    if (i >= 3) {
+    if (i >= pictures.length) {
         i = 0;
     }
     else if (i < 0) {
