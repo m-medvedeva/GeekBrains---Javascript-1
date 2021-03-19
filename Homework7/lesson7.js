@@ -189,7 +189,7 @@ function haveFood(unit) {
         createFood();
         score++;
         apples.innerHTML = 'Ваша змейка съела яблок: ' + score; // выводим счет съеденного
-        if (score == 3) {
+        if (score % 3 == 0) {
             createBomb();
         };
     }
