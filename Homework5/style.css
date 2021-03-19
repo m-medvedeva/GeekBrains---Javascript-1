@@ -1,0 +1,43 @@
+table {
+   border-collapse: collapse;  
+ }
+
+ tr {
+   width: 60px;
+   height: 60px;
+   border: 3px solid #51361a;
+ }
+
+ td {
+   width: 60px;
+   height: 60px;
+   border: 3px solid #51361a;
+   font-size: 40px;
+   text-align: center;
+ }
+
+.letters {
+   font-size: 30px;
+   letter-spacing: 20px;
+ }
+
+ .black {
+    background-color: #51361a;
+ }
+
+ .white {
+  background-color: #fffdd0;
+ }
+ 
+ .wrapper {
+   display: flex;
+ }
+
+ .numbers {
+    width: 40px;
+    margin: 52px 0 0px 19px;
+    vertical-align: baseline;
+    font-size: 54px;
+ }
+
+
